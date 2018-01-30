@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './react-table.css'
 import ReactTable from 'react-table';
 
 const rootColumnsConfig = [{
