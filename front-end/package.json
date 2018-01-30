@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "start": "webpack-dev-server"
-
+    "build": "npm run clear && webpack -p",
+    "start": "webpack-dev-server",
+    "clear": "rimraf ../src/main/resources/static/web/*"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
     "html-webpack-plugin": "^2.30.1",
+    "rimraf": "^2.6.2",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
